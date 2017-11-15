@@ -7,14 +7,14 @@ module.exports = function (grunt) {
           ignoreSheets : [/fonts.googleapis/],
         },
         files: [
-        { src: 'index.html', dest: 'cleancss/tidy.css' }
+          { src: 'index.html', dest: 'cleancss/tidy.css' }
         ]
       }
     },
     cssmin: {
       dist: {
         files: [
-        { src: 'cleancss/tidy.css', dest: 'cleancss/tidy.css' }
+          { src: 'cleancss/tidy.css', dest: 'cleancss/tidy.css' }
         ]
       }
     }
