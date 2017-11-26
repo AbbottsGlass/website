@@ -25,6 +25,16 @@
     <![endif]-->
   </head>
   <body itemscope itemtype="https://schema.org/LocalBusiness">
+		
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=545742759109276';
+	fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
   <!-- NAVBAR-->
   <!--===============================================================-->
@@ -379,6 +389,7 @@
           </div>
           <div class="col-sm-6">
             <ul class="list-inline pull-right">
+              <li><div class="fb-like" data-href="https://www.facebook.com/abbottsglass/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div></li>
               <li class="border-right"><a href="#home" data-scroll>Top</a></li>
               <li class="border-right"><a href="#products" data-scroll>Products</a></li>
               <li><a href="#services" data-scroll>Services</a></li>
